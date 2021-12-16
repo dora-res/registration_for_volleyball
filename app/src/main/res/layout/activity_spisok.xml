@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spisok"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Список людей,\n записавшихся на секцию по волейболу"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Имя"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="3dp"
+            />
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="Фамилия"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/surname"
+            android:layout_toRightOf="@+id/name"
+            android:layout_marginHorizontal="3dp"
+
+            />
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="Отчество"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/patronymic"
+            android:layout_toRightOf="@+id/surname"
+            android:layout_marginHorizontal="3dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

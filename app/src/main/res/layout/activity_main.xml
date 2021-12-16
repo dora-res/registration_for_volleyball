@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Анкета записи на секцию по волейболу"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Введите ваше ФИО"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Записаться"
+        android:padding="18dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/sign"
+        android:onClick="Sign"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Список записавшихся"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/surname1"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:gravity="center_horizontal"
+            android:text="Фамилия"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+        android:id="@+id/name1"
+        android:layout_toRightOf="@id/surname1"
+        android:layout_marginHorizontal="2dp"
+
+        />
+
+        <TextView
+            android:id="@+id/otch1"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_toRightOf="@id/name1"
+            android:gravity="center_horizontal"
+            android:text="Отчество"
+            android:textSize="17dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/surnameT"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_below="@id/surname1"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:id="@+id/nameT"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/name1"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/surnameT" />
+
+        <TextView
+            android:id="@+id/otchT"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/otch1"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/nameT"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
